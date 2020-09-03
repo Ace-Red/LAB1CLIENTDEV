@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>Nikita</title>
+</head>
+<body>
+<input type="text" id="write">
+<input type="button" value="Нажмите" onclick="writeContent()">
+<div id="contentText">
+
+</div>
+
+
+
+<script>
+    function arr(num) {
+        let arrayList = new Array(num);
+        for (i = 0; i < num; i++) {
+            arrayList[i] = i;
+        }
+        console.log(arrayList);
+    }
+
+    function condition(num1, num2, num3) {
+        if (num1 % num2 == 0 && num1 % num3 == 0) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+    }
+
+    function сapitalize(str) {
+        if (!str) {
+            console.log("Это строка пустая!")
+        } else {
+            console.log(str[0].toUpperCase() + str.slice(1));
+        }
+    }
+    
+</script>
+</body>
+</html>
